@@ -71,7 +71,10 @@ jobs:
             path: artifact
 
       - name: Extract Tampermonkey
-        run: cd test/tampermonkey && tar -xzvf tampermonkey.tar.gz && cd ../../
+        run: |
+          cd test/tampermonkey && tar -xzvf tampermonkey.tar.gz && cd ../../
+          rm -f test/tampermonkey/tampermonkey.tar.gz
+          mkdir tmp
 
       - name: Setup Python
         uses: actions/setup-python@v3.1.2
