@@ -79,15 +79,6 @@ jobs:
           pip install playwright
           playwright install
 
-      - name: Checkout Tampermonkey
-        uses: actions/checkout@v2
-        with:
-          repository: 'Tampermonkey/tampermonkey'
-          path: 'tampermonkey'
-
-      - name: List dir
-        run: ls -al
-
       - name: Run test
         run: ./test/test.py
 
