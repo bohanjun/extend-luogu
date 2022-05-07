@@ -5,7 +5,7 @@ import sys
 
 path_to_extension = "./test/tampermonkey"
 user_data_dir = "./tmp"
-script_dir = f"{sys.argv[1]}/artifact/"
+script_dir = f"{sys.argv[1]}/artifact/extend-luogu.min.user.js"
 
 def install(context):
     page = context.new_page()

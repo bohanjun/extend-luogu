@@ -91,9 +91,6 @@ jobs:
       - name: Run test
         run: xvfb-run ./test/test.py ${{ github.workspace }}
 
-      - name: Fuck the dir
-        run: ls -al && cd artifact && ls -al
-
   build:
     runs-on: ubuntu-latest
     needs: test
