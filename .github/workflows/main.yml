@@ -89,7 +89,7 @@ jobs:
           playwright install
 
       - name: Run test
-        run: xvfb-run ./test/test.py
+        run: xvfb-run ./test/test.py ${{ github.workspace }}
 
   build:
     runs-on: ubuntu-latest

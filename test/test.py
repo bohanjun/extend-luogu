@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 
 from playwright.sync_api import sync_playwright
+import sys
 
 path_to_extension = "./test/tampermonkey"
 user_data_dir = "./tmp"
+script_dir = f"{sys.argv[1]}/artifact/extend-luogu.min.user.js"
 
+def install(context):
+    page = context.new_page()
+    page.goto(f"file://{script_dir}")
+    print(page.title())
 
 def run(playwright):
     context = playwright.chromium.launch_persistent_context(
@@ -15,9 +21,7 @@ def run(playwright):
             f"--load-extension={path_to_extension}",
         ],
     )
-    page = context.new_page()
-    page.goto("http://playwright.dev")
-    print(page.title())
+    install(context)
     context.close()
 
 
