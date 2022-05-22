@@ -1,0 +1,1 @@
+const t={key:"v-6ca815f4",path:"/installation.html",title:"\u5B89\u88C5",lang:"zh-CN",frontmatter:{title:"\u5B89\u88C5"},excerpt:"",headers:[{level:2,title:"\u5B89\u88C5",slug:"\u5B89\u88C5",children:[]}],git:{updatedTime:1653220079e3,contributors:[{name:"\u6C6A\u5FC3\u79BE",email:"wangxinhe06@gmail.com",commits:1}]},filePathRelative:"installation.md"};export{t as data};

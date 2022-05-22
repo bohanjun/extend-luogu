@@ -1,0 +1,1 @@
+const e={key:"v-0dcbc2cf",path:"/badge.html",title:"Badge",lang:"zh-CN",frontmatter:{title:"Badge",tags:["\u6807\u7B7E"]},excerpt:"",headers:[{level:2,title:"Badge",slug:"badge",children:[]}],git:{updatedTime:1653220079e3,contributors:[{name:"\u6C6A\u5FC3\u79BE",email:"wangxinhe06@gmail.com",commits:1}]},filePathRelative:"badge.md"};export{e as data};
